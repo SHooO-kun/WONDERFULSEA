@@ -534,6 +534,7 @@ button1:after {
         height: 220px;
         margin-left: 10px;
     }
+    
     /*宿画像*/
     button3:after {
         position: absolute;
@@ -762,9 +763,9 @@ button1:after {
     
     /*天気記号*/
     .kigou {
-        margin-top: 15px;
+        margin-top: 20px;
         font-size: 40px;
-        margin-left: 30px;
+        margin-left: 10px;
         float: left;
     }
 
