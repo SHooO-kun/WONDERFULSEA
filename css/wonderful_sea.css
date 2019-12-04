@@ -1,0 +1,979 @@
+@charset "utf-8";
+
+body{
+    margin: 0px;
+    font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
+}
+
+/*ヘッダー*/
+header{
+position: absolute;
+z-index: 100;
+width: 100%;
+background-color: rgba(255,255,255,0.7);
+}
+
+/*ヘッダーA：　サイト名*/
+.headA{
+display: inline-block;
+line-height: 60px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: #000;
+font-family: 'Montserrat'sans-serif;
+font-size: 22px;
+text-decoration: none;
+color: #fff;
+}
+
+/*ヘッダーB　ナビゲーションメニュー*/
+.headB ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: fantasy;
+}
+
+.headB a{
+    display: block;
+    padding: 13px;
+    color: inherit;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+.headB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px){
+    header .container{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .headB ul{
+        display: flex;
+    }
+}
+
+/*ヘッダーC　トルクボタン*/
+@media (max-width:768px){
+    /*小さい画面*/
+    header .container-small{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .headC{
+     margin-right: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 29px;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .headC:hover{
+        opacity: 0.3;
+    }
+    
+    .headB {
+        display: none;
+    }
+    
+}
+
+@media (min-width:768px) {
+    /*大きい画面*/
+    .headC {
+        display: none;
+    }
+    
+    .headB {
+        display: block !important;
+    }
+}
+
+/*　メイン文字　*/
+.conA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    min-height: 450px;
+    background-image: url(../image/umi.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.conA h1{
+    margin-top: 2;
+    margin-bottom: 10px;
+    font-family: 'Montserrat',sans-serif;
+    font-size:12vw;
+    
+}
+
+.conA p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    
+}
+
+.conA a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: solid 3px #fff;
+    border-radius: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: serif;
+    color: #fff;
+    
+}
+
+.conA a:hover{
+    background-image:linear-gradient(
+        rgba(255,255,255,0.3),
+        rgba(255,255,255,0.3)
+    );
+}
+
+@media (min-width:768px){
+    .conA h1 {
+    font-size: 100px;    
+    }
+    
+    .conA p {
+        font-size: 24px;
+    }
+}
+
+.icon0{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ffcc90;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/*コンテンツCショップ概要*/
+.conB{
+    background-color: #ddffff;
+    color:#000;
+    
+}
+
+.conB h2{
+    margin-top: 9px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: aliceblue;
+}
+
+.conB p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.8;
+    color: aliceblue;
+}
+
+.conB a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: solid 3px #fff;
+    border-radius: 6px;
+    background-color:;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: serif;
+    color: #fff;
+    
+}
+
+.conB a:hover{
+    background-image:linear-gradient(
+        rgba(255,255,255,0.3),
+        rgba(255,255,255,0.3)
+    );
+}
+
+.conB .photo{
+    min-height: 200px;
+    background-image: url(../image/main01.png);
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+}
+
+.conB .text{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    
+}
+
+/*最高のダイビング・・・*/
+@media(min-width:768px){
+    .conB .container{
+        display: flex;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .conB .photo{
+        flex: 3;
+    }
+    
+    .conB .text{
+        flex: 2;
+        padding: 50px;
+    }
+}
+
+.main {
+    
+}
+
+/*一つ目と二つ目*/
+.BOX00A {
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    width: 1100px;
+}
+
+/*スマートフォン対応の一つ目二つ目まとめて*/
+@media(max-width:768px){
+    .BOX00A {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        width: 375px;
+    }
+}
+
+/*大きい画面のダイビングショップ紹介*/
+button1 {
+    border:2px solid #0011;
+    position:relative;
+    background-color: azure;
+    margin:10px;
+    display:inline-block;
+    padding:8px 25px 8px 25px;
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1px;
+    width: 200px;
+    height: 220px;
+    margin-left: 10px;
+}
+
+/*スマートフォン対応のショップ紹介*/
+@media(max-width:768px) {
+    button1 {
+        width:190px;
+        height: 200px;
+        position:relative;
+        background-color: azure;
+        margin:10px;
+        display:inline-block;
+        padding:8px 5px 8px 5px;
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px; 
+    }
+
+ /*ミニダイビングショップ画像*/
+    .yellow:after { 
+        background-image: url(../image/huniki.jpg); 
+        background-position: center;
+        background-size: cover;
+        width: 196px;
+        left:149px;
+    }
+}
+
+/*ダイビングショップアイコン*/
+.icon1{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #136fff;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+ /*大きい画面のダイビングショップ画像*/
+button1:after {
+    position: absolute;
+    border:2px solid #0011;
+    top:10px;
+    right:-218px;
+    content:"";
+    height:100%;
+    width:100%;
+    z-index:-999;
+}
+
+.yellow:after { 
+    background-image: url(../image/huniki.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+
+.BOX001 {
+    width:0px;
+    margin-right: auto;
+    float: left;
+    position: relative;
+}
+
+/*スマートフォン対応のお魚紹介*/
+@media(max-width:767px) {
+    /*魚の画像*/
+    .BOX006 {
+        position: absolute;
+        width: 200px;
+        height: 220px;
+        border:2px solid #0011;
+        margin:10px;
+        background-image: url(../image/sakana001.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    /*海のお魚紹介文*/
+    .BOX007 {
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px;
+        position: relative;
+        left:160px;
+        width: 190px;
+        height: 200px;
+        border:2px solid #0011;
+        padding:8px 5px 8px 5px;
+        margin-bottom: 20px;
+        background-color:azure;
+    }
+
+}
+
+/*大きい画面の魚紹介*/
+@media(min-width:768px) {
+/*魚　画像*/
+.BOX006{
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    border:2px solid #0011;
+    padding:8px 25px 8px 25px;
+    margin:10px;
+    background-image: url(../image/sakana001.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*見られる魚紹介*/
+.BOX007{
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1px;
+    margin-top: 25px;
+    position: relative;
+    right:-226px;
+    width: 200px;
+    height: 220px;
+    border:2px solid #0011;
+    padding:8px 25px 8px 25px;
+    margin-bottom: 20px;
+    background-color:azure;
+}
+}
+
+/*魚アイコン*/
+.icon2{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: aqua;
+    color:cornsilk;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+ 
+/*大きい画面*/
+@media(min-width:768px){
+    .BOX001 {
+        margin-left: 100px;
+    }
+    
+    .BOX002 {
+        margin-left: 500px;
+        float: left;
+    }
+}
+
+/*小さい画面*/
+@media(max-width:768px){
+    .BOX002 {
+        margin-top: 260px;
+    }
+}
+
+/*三つ目と四つ目*/
+.BOX00B {
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+/*スマートフォン対応の宿紹介＋三つ目と四つ目*/
+@media(max-width:768px){
+    /*宿紹介*/
+    button3 {
+        border:2px solid #0011;
+        width:190px;
+        height: 200px;
+        position:relative;
+        background-color: azure;
+        margin:10px;
+        display:inline-block;
+        padding:8px 5px 8px 5px;
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px; 
+    }
+    
+    /*宿画像*/
+    button3:after {
+        position: absolute;
+        border:2px solid #0011;
+        top:10px;
+        right:-218px;
+        content:"";
+        height:100%;
+        width:100%;
+        z-index:-999;
+    }
+    .blue:after { 
+        background-image: url(../image/huniki_01.png); 
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+        left: 149px;
+        width: 196px;
+    }
+    
+    /*三つ目と四つ目*/
+    .BOX00B {
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+}
+
+/*大きい画面の宿紹介*/
+@media(min-width:768px){
+    /*宿紹介*/
+    button3 {
+        border:2px solid #0011;
+        position:relative;
+        background-color: azure;
+        margin:10px;
+        display:inline-block;
+        padding:8px 25px 8px 25px;
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px;
+        width: 200px;
+        height: 220px;
+        margin-left: 10px;
+    }
+    /*宿画像*/
+    button3:after {
+        position: absolute;
+        border:2px solid #0011;
+        top:10px;
+        right:-218px;
+        content:"";
+        height:100%;
+        width:100%;
+        z-index:-999;
+    }
+    .blue:after { 
+        background-image: url(../image/huniki_01.png); 
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+}
+
+/*ホームアイコン*/
+.icon3{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color:#ffcc90;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.BOX003 {
+    width:0px;
+    margin-right: auto;
+    float: left;
+    position: relative;
+}
+
+/*スマートフォン対応の食事紹介*/
+@media(max-width:768px){
+    /*食事画像*/
+    .BOX008{
+        position: absolute;
+        width: 200px;
+        height: 220px;
+        border:2px solid #0011;
+        margin:10px;
+        background-image: url(../image/shokuji01.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    /*食事紹介*/
+    .BOX009{
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px;
+        margin-top: 25px;
+        position: relative;
+        left:160px;
+        width: 190px;
+        height: 200px;
+        border:2px solid #0011;
+        padding:8px 5px 8px 5px;
+        margin-bottom: 30px;
+        background-color:azure;
+    }
+}
+
+/*大きい画面の食事紹介*/
+@media(min-width:768px){
+    /*食事画像*/
+    .BOX008{
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    border:2px solid #0011;
+    padding:8px 25px 8px 25px;
+    margin:10px;
+    background-image: url(../image/shokuji01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+    
+    /*食事紹介*/
+    .BOX009{
+        text-transform:uppercase;
+        font-family:sans-serif;
+        font-size:11px;
+        font-weight:800;
+        letter-spacing:1px;
+        margin-top: 25px;
+        position: relative;
+        right:-226px;
+        width: 200px;
+        height: 220px;
+        border:2px solid #0011;
+        padding:8px 25px 8px 25px;
+        margin-bottom: 20px;
+        background-color:azure;
+    }
+}
+
+/*食事アイコン*/
+.icon4{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color:coral;
+    color:beige;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*大きい画面*/
+@media(min-width:768px){
+    .BOX003 {
+        margin-left: 100px;
+        position: absolute;
+    }
+    
+    .BOX004 {
+        margin-left: 600px;
+        float: left;
+    }
+}
+
+/*小さい画面*/
+@media(max-width:768px){
+    .BOX004 {
+        margin-top: 260px;
+    }
+}
+
+/*紹介の配置*/
+.BOXleft {
+    float:left;
+}
+
+/*記事の配置*/
+.BOXright {
+    float:right;
+    width: 200px;
+    height: 536px;
+    border: solid 2px #0011;
+    text-align: center;
+    margin-right: 110px;
+    overflow: hidden;
+    margin-top: 10px;
+    color:#fff;
+    position: relative;
+    font-family: 'Montserrat'sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(../image/awa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.BOXright h2 {
+    margin: 8px;
+}
+
+.BOXright p {
+    margin: auto;
+}
+
+/*小さい画面の記事*/
+@media(max-width:768px){
+    .BOXright{
+        width: 100%;
+        height: 440px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 17px;
+    }
+    
+    /*記事の中身*/
+    .kiji{
+        margin: 10px;
+        width: 430;
+        height:240px;
+        color: #fff;
+        font-family:fantasy;
+    }
+    
+    .kiji p {
+        font-size: 30px;
+        margin-right: 10px;
+        
+    }
+    
+    /*記事のruby*/
+    .kiji rt {
+        font-size: 10px;
+    }
+    
+    /*最新の情報*/
+    .saisin {
+        width:auto;
+        height: 80px;
+        background-color: rgba(255,255,255,0.7);
+    }
+    
+    /*昨日の情報*/
+    .kinou {
+        width: auto;
+        height: 80px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    
+    /*一昨日の情報*/
+    .ototui {
+        width:auto;
+        height: 80px;
+        background-color: rgba(255,255,255,0.3);
+    }
+    
+    /*天気記号*/
+    .kigou {
+        margin-top: 15px;
+        font-size: 40px;
+        margin-left: 30px;
+        float: left;
+    }
+
+}
+
+/*もっと見る*/
+.motto  a {
+        text-decoration:none;
+        color: aliceblue;
+        
+    }
+
+.icon5 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    background-color:#999999;
+    margin-top: 5px;
+}
+
+/*大きい画面の時の記事*/
+@media(min-width:768px){
+    .BOXright {
+        width:300px;
+        
+    }
+    
+    .kiji{
+        margin: 10px;
+        height: 330px;
+        color: #fff;
+        font-family:fantasy;
+        font-size: 25px;
+    }
+    
+    .kiji p {
+        font-size: 30px;
+    }
+    
+    /*記事のruby*/
+    .kiji rt {
+        font-size: 10px;
+    }
+    
+    /*最新の情報*/
+    .saisin {
+        width:auto;
+        height: 110px;
+        background-color: rgba(255,255,255,0.7);
+    }
+    
+    /*昨日の情報*/
+    .kinou {
+        width: auto;
+        height: 110px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    
+    .ototui {
+        width:auto;
+        height: 110px;
+        background-color: rgba(255,255,255,0.3);
+    }
+
+    .kigou {
+        margin-top: 35px;
+        font-size: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        float: left;
+    }
+}
+
+
+
+/*フッター全体*/
+footer {
+    clear: both;
+    margin-top: 20px;
+    color: aliceblue;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../image/footer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*小さい画面*/
+@media(max-width:768px){
+    .footer {
+        margin-top: 0px;
+    }
+}
+
+
+footer .container { 
+    padding: 20px 20px;
+}
+
+@media (min-width:768px){
+    footer .container {
+        display: flex;
+    }
+    
+    .footA {
+        flex: 0 0 40%;
+    }
+    
+    .footB {
+        flex: 0 0 60%;
+    }
+    
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+/*フッターA　サイト情報*/
+.footA{
+    margin-bottom: 10px;
+}
+
+.footA a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*フッターB　フッターメニュー*/
+.footB div {
+    margin-bottom: 10px;
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    border-bottom: solid 3px;
+    font-size: 18px;
+}
+
+.footB ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+.footB a {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width:768px){
+    .footB {
+        display: flex;
+    }
+    
+    .footB div {
+        flex: 1;
+    }
+    
+    .footB div:not(:first-child){
+        margin-left: 40px;
+    }
+}
+
+
+/*フッターD　SNSメニュー*/
+.footD {
+    margin-top: 0px;
+}
+
+.footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footD a {
+    display: block;
+    padding: 0;
+    color: aliceblue;
+    font-size: 16px;
+    margin-right: 25px;
+    text-decoration: none;
+    border: solid 2px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.footD a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*フッターC　コピーライト*/
+.footC {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Montserrat',serif
+}
