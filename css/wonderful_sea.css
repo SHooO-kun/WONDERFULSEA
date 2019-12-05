@@ -730,9 +730,10 @@ button1:after {
     }
     
     .kiji p {
+        float: right;
         font-size: 30px;
         margin-right:5px;
-        
+        margin-left: 0px;
     }
     
     /*記事のruby*/
