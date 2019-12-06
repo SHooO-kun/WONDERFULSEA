@@ -729,7 +729,7 @@ button1:after {
     /*記事の中身*/
     .kiji{
         margin: 10px;
-        width: 430;
+        width: auto;
         height:240px;
         color: #fff;
         font-family:fantasy;
@@ -738,13 +738,13 @@ button1:after {
     .kiji p {
         float: right;
         font-size: 30px;
-        margin-right:5px;
-        margin-left: 0px;
+        margin-right:auto;
+        margin-left: auto;
     }
     
     /*記事のruby*/
     .kiji rt {
-        font-size: 10px;
+        font-size: 9px;
     }
     
     /*最新の情報*/
