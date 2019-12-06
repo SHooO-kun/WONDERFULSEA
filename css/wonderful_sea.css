@@ -31,19 +31,24 @@ color: #fff;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    font-family: fantasy;
+    font-family:fantasy;
 }
 
+/*上のコンテンツ*/
 .headB a{
     display: block;
-    padding: 13px;
+    padding: 12px;
     color: inherit;
-    font-size: 16px;
+    font-size: 22px;
     text-decoration:none;
 }
 
 .headB a:hover{
     background-color: rgba(0,0,0,0.3);
+}
+
+.headB p1{
+    font-size: 15px;
 }
 
 @media (min-width: 768px){
@@ -91,6 +96,7 @@ color: #fff;
     
 }
 
+/*大きい画面のヘッダー*/
 @media (min-width:768px) {
     /*大きい画面*/
     .headC {
