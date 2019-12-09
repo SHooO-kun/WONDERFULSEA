@@ -738,9 +738,6 @@ button1:after {
     .kiji p {
         float: right;
         font-size: 30px;
-        margin-right:auto;
-        margin-left: auto;
-        overflow: hidden;
     }
     
     /*記事のruby*/
@@ -775,7 +772,6 @@ button1:after {
         font-size: 40px;
         margin-left: 10px;
         float: left;
-        overflow: hidden;
     }
 
 }
