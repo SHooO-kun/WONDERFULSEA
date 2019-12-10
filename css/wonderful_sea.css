@@ -258,9 +258,6 @@ color: #fff;
     }
 }
 
-.main {
-    
-}
 
 /*一つ目と二つ目*/
 .BOX00A {
@@ -451,7 +448,7 @@ button1:after {
 @media(min-width:768px){
     .BOX001 {
         margin-left: 100px;
-    }
+    }  
     
     .BOX002 {
         margin-left: 500px;
@@ -698,7 +695,6 @@ button1:after {
     border: solid 2px #0011;
     text-align: center;
     margin-right: 110px;
-    overflow: hidden;
     margin-top: 10px;
     color:#fff;
     position: relative;
@@ -737,12 +733,12 @@ button1:after {
     
     .kiji p {
         float: right;
-        font-size: 30px;
+        font-size: 25px;
     }
     
     /*記事のruby*/
     .kiji rt {
-        font-size: 9px;
+        font-size: auto;
     }
     
     /*最新の情報*/
@@ -774,26 +770,6 @@ button1:after {
         float: left;
     }
 
-}
-
-/*もっと見る*/
-.motto  a {
-        text-decoration:none;
-        color: aliceblue;
-        
-    }
-
-.icon5 {
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    color:#fff;
-    text-align: center;
-    background-color:#999999;
-    margin-top: 5px;
 }
 
 /*大きい画面の時の記事*/
@@ -848,6 +824,29 @@ button1:after {
         float: left;
     }
 }
+
+/*記事アイコン*/
+.icon5 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    background-color:#999999;
+    margin-top: 5px;
+}
+
+/*もっと見る*/
+.motto  a {
+        text-decoration:none;
+        color: aliceblue;
+        
+    }
+
+
 
 
 
