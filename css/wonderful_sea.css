@@ -65,6 +65,10 @@ color: #fff;
     .headB ul{
         display: flex;
     }
+    
+    .headB_zoku {
+        display: none;
+    }
 }
 
 /*ヘッダーC　トルクボタン*/
@@ -93,6 +97,15 @@ color: #fff;
     
     .headB {
         display: none;
+    }
+    
+    .headB a{
+        margin-top: 5vw;
+        margin-bottom:8%;
+    }
+    
+    .headB_zoku{
+        line-height: 4vw;
     }
     
 }
