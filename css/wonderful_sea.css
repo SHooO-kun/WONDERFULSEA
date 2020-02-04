@@ -107,11 +107,12 @@ color: #fff;
     
     .headB a{
         margin-top: 5vw;
-        margin-bottom:8%;
+        margin-bottom:9.2%;
     }
     
     .headB_zoku{
         line-height: 4vw;
+        text-align: center;
     }
     
 }
