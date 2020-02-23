@@ -822,10 +822,18 @@ p17{
     }
     
     /*次ページの白枠*/
-    .tugipe01,.tugipe03,.tugipe05{
+    .tugipe01{
+        
         position: relative;
         float: right;
-        width: 30%;
+        width: 33%;
+        height:100%;
+        background-color: #fff7;
+    }
+    .tugipe03,.tugipe05{
+        position: relative;
+        float: right;
+        width: 35%;
         height:100%;
         background-color: #fff7;
     }
@@ -1073,7 +1081,7 @@ p17{
     .tugipe02{
         position: relative;
         float: left;
-        width: 30%;
+        width: 35%;
         height:100%;
         background-color: #fff8;
     }
@@ -1105,8 +1113,8 @@ p17{
     .mo02{
         float:right;
         position:relative;
-        width: 23vw;
-        margin-top: 62vw;
+        width: 25vw;
+        margin-top: 60vw;
         margin-right: 2vw;
         font-family: fantasy;
         color: #fffc;
@@ -1383,8 +1391,9 @@ p17{
     .mo04{
         float:right;
         position:relative;
-        width: 24vw;
-        margin-top: 73vw;
+        width: 36vw;
+        height: 16vw;
+        margin-top: 72vw;
         margin-right: 2vw;
         font-family: fantasy;
         color: #000a;
@@ -1608,7 +1617,7 @@ p17{
         margin-right: auto;
         margin-top: 4vw;
         font-size: 6vw;
-        line-height: 2.8;
+        line-height: 2.5;
     }
     
     /*次へのアイコン、サイズ*/
