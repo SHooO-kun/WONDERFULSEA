@@ -420,10 +420,12 @@ color: #fff;
     /*こだわり紹介メイン*/
     .shoukai001{
         width:60vw;
+        text-align: center;
+        height: 4vw;
         top: 5vw;
         margin-right: auto;
         margin-left: auto;
-        font-size: 3vw;
+        font-size: 2.7vw;
         font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
     }
     
@@ -699,7 +701,7 @@ p17{
     /*次のページへのボタン欄*/
     .tugino01{
         text-align: center;
-        width: 14vw;
+        width: 20vw;
         height: 15vw;
         margin-top: 2vw;
         margin-left: auto;
@@ -823,10 +825,9 @@ p17{
     
     /*次ページの白枠*/
     .tugipe01{
-        
         position: relative;
         float: right;
-        width: 33%;
+        width: 30%;
         height:100%;
         background-color: #fff7;
     }
@@ -890,6 +891,11 @@ p17{
         background-position:center;
         
     }
+    
+    p25{
+        font-size:4vw;
+    }
+    
     .sita04{
         background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/DAI001.jpg);
         background-position:center;
@@ -967,8 +973,8 @@ p17{
     .mo02,.mo04{
         float:right;
         position:relative;
-        width: 16vw;
-        margin-top: 24vw;
+        width: 20vw;
+        margin-top: 22vw;
         margin-right: 2vw;
         font-family: fantasy;
         color: #fffa;
