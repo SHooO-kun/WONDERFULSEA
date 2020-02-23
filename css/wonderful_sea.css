@@ -78,7 +78,7 @@ color: #fff;
 }
 
 /*ヘッダーC　トルクボタン*/
-@media (max-width:768px){
+@media (max-width:767px){
     /*小さい画面*/
     header .container-small{
         display: flex;
@@ -180,7 +180,7 @@ color: #fff;
 
 @media (min-width:768px){
     .conA h1 {
-    font-size: 100px;    
+        font-size: 100px;    
     }
     
     .conA p {
@@ -219,7 +219,7 @@ color: #fff;
 .conB p{
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 15.8px;
     line-height: 1.8;
     opacity: 0.8;
     color: aliceblue;
@@ -228,10 +228,10 @@ color: #fff;
 .conB a{
     display: inline-block;
     margin-top: 10px;
+    margin-left: 25%;
     padding: 10px 20px;
     border: solid 3px #fff;
     border-radius: 6px;
-    background-color:;
     font-size: 15px;
     text-decoration: none;
     font-family: serif;
@@ -244,6 +244,12 @@ color: #fff;
         rgba(255,255,255,0.3),
         rgba(255,255,255,0.3)
     );
+}
+
+@media(max-width:768px){
+    .conB a{
+        margin-left: 20%;
+    }
 }
 
 .conB .photo{
@@ -280,70 +286,6 @@ color: #fff;
 }
 
 
-/*一つ目と二つ目*/
-.BOX00A {
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
-    width: 1100px;
-}
-
-/*スマートフォン対応の一つ目二つ目まとめて*/
-@media(max-width:768px){
-    .BOX00A {
-        margin-top: 5px;
-        margin-right: auto;
-        margin-left: auto;
-        overflow: hidden;
-        width: 375px;
-    }
-}
-
-/*大きい画面のダイビングショップ紹介*/
-button1 {
-    border:2px solid #0011;
-    position:relative;
-    background-color: azure;
-    margin:10px;
-    display:inline-block;
-    padding:8px 25px 8px 25px;
-    text-transform:uppercase;
-    font-family:sans-serif;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:1px;
-    width: 200px;
-    height: 220px;
-    margin-left: 10px;
-}
-
-/*スマートフォン対応のショップ紹介*/
-@media(max-width:768px) {
-    button1 {
-        width:190px;
-        height: 200px;
-        position:relative;
-        background-color: azure;
-        margin:10px;
-        display:inline-block;
-        padding:8px 5px 8px 5px;
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px; 
-    }
-
- /*ミニダイビングショップ画像*/
-    .yellow:after { 
-        background-image: url(../image/huniki.jpg); 
-        background-position: center;
-        background-size: cover;
-        width: 196px;
-        left:149px;
-    }
-}
-
 /*ダイビングショップアイコン*/
 .icon1{
     display: inline-block;
@@ -358,98 +300,6 @@ button1 {
     margin-top: 5px;
     margin-left: 20px;
 }
-
- /*大きい画面のダイビングショップ画像*/
-button1:after {
-    position: absolute;
-    border:2px solid #0011;
-    top:10px;
-    right:-218px;
-    content:"";
-    height:100%;
-    width:100%;
-    z-index:-999;
-}
-
-.yellow:after { 
-    background-image: url(../image/huniki.jpg); 
-    background-position: center;
-    background-size: cover;
-}
-
-.BOX001 {
-    width:0px;
-    margin-right: auto;
-    float: left;
-    position: relative;
-}
-
-/*スマートフォン対応のお魚紹介*/
-@media(max-width:767px) {
-    /*魚の画像*/
-    .BOX006 {
-        position: absolute;
-        width: 200px;
-        height: 220px;
-        border:2px solid #0011;
-        margin:10px;
-        background-image: url(../image/sakana001.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    /*海のお魚紹介文*/
-    .BOX007 {
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px;
-        position: relative;
-        left:160px;
-        width: 190px;
-        height: 200px;
-        border:2px solid #0011;
-        padding:8px 5px 8px 5px;
-        margin-bottom: 20px;
-        background-color:azure;
-    }
-
-}
-
-/*大きい画面の魚紹介*/
-@media(min-width:768px) {
-/*魚　画像*/
-.BOX006{
-    position: absolute;
-    width: 200px;
-    height: 220px;
-    border:2px solid #0011;
-    padding:8px 25px 8px 25px;
-    margin:10px;
-    background-image: url(../image/sakana001.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-/*見られる魚紹介*/
-.BOX007{
-    text-transform:uppercase;
-    font-family:sans-serif;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:1px;
-    margin-top: 25px;
-    position: relative;
-    right:-226px;
-    width: 200px;
-    height: 220px;
-    border:2px solid #0011;
-    padding:8px 25px 8px 25px;
-    margin-bottom: 20px;
-    background-color:azure;
-}
-}
-
 /*魚アイコン*/
 .icon2{
     display: inline-block;
@@ -464,120 +314,6 @@ button1:after {
     margin-top: 5px;
     margin-left: 20px;
 }
- 
-/*大きい画面*/
-@media(min-width:768px){
-    .BOX001 {
-        margin-left: 100px;
-    }  
-    
-    .BOX002 {
-        margin-left: 500px;
-        float: left;
-    }
-}
-
-/*小さい画面*/
-@media(max-width:768px){
-    .BOX002 {
-        margin-top: 260px;
-    }
-}
-
-/*三つ目と四つ目*/
-.BOX00B {
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
-}
-
-/*スマートフォン対応の宿紹介＋三つ目と四つ目*/
-@media(max-width:768px){
-    /*宿紹介*/
-    button3 {
-        border:2px solid #0011;
-        width:190px;
-        height: 200px;
-        position:relative;
-        background-color: azure;
-        margin:10px;
-        display:inline-block;
-        padding:8px 5px 8px 5px;
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px; 
-    }
-    
-    /*宿画像*/
-    button3:after {
-        position: absolute;
-        border:2px solid #0011;
-        top:10px;
-        right:-218px;
-        content:"";
-        height:100%;
-        width:100%;
-        z-index:-999;
-    }
-    .blue:after { 
-        background-image: url(../image/huniki_01.png); 
-        background-position: center;
-        background-size: cover;
-        margin-bottom: 20px;
-        left: 149px;
-        width: 196px;
-    }
-    
-    /*三つ目と四つ目*/
-    .BOX00B {
-        margin-right: auto;
-        margin-left: auto;
-        overflow: hidden;
-        margin-top: 5px;
-    }
-}
-
-/*大きい画面の宿紹介*/
-@media(min-width:768px){
-    /*宿紹介*/
-    button3 {
-        border:2px solid #0011;
-        position:relative;
-        background-color: azure;
-        margin:10px;
-        display:inline-block;
-        padding:8px 25px 8px 25px;
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px;
-        width: 200px;
-        height: 220px;
-        margin-left: 10px;
-    }
-    
-    /*宿画像*/
-    button3:after {
-        position: absolute;
-        border:2px solid #0011;
-        top:10px;
-        right:-218px;
-        content:"";
-        height:100%;
-        width:100%;
-        z-index:-999;
-    }
-    .blue:after { 
-        background-image: url(../image/huniki_01.png); 
-        background-position: center;
-        background-size: cover;
-        margin-bottom: 20px;
-    }
-}
-
 /*ホームアイコン*/
 .icon3{
     display: inline-block;
@@ -592,81 +328,6 @@ button1:after {
     margin-top: 5px;
     margin-left: 20px;
 }
-
-.BOX003 {
-    width:0px;
-    margin-right: auto;
-    float: left;
-    position: relative;
-}
-
-/*スマートフォン対応の食事紹介*/
-@media(max-width:768px){
-    /*食事画像*/
-    .BOX008{
-        position: absolute;
-        width: 200px;
-        height: 220px;
-        border:2px solid #0011;
-        margin:10px;
-        background-image: url(../image/shokuji01.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    /*食事紹介*/
-    .BOX009{
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px;
-        margin-top: 25px;
-        position: relative;
-        left:160px;
-        width: 190px;
-        height: 200px;
-        border:2px solid #0011;
-        padding:8px 5px 8px 5px;
-        margin-bottom: 30px;
-        background-color:azure;
-    }
-}
-
-/*大きい画面の食事紹介*/
-@media(min-width:768px){
-    /*食事画像*/
-    .BOX008{
-    position: absolute;
-    width: 200px;
-    height: 220px;
-    border:2px solid #0011;
-    padding:8px 25px 8px 25px;
-    margin:10px;
-    background-image: url(../image/shokuji01.jpg);
-    background-position: center;
-    background-size: cover;
-}
-    
-    /*食事紹介*/
-    .BOX009{
-        text-transform:uppercase;
-        font-family:sans-serif;
-        font-size:11px;
-        font-weight:800;
-        letter-spacing:1px;
-        margin-top: 25px;
-        position: relative;
-        right:-226px;
-        width: 200px;
-        height: 220px;
-        border:2px solid #0011;
-        padding:8px 25px 8px 25px;
-        margin-bottom: 20px;
-        background-color:azure;
-    }
-}
-
 /*食事アイコン*/
 .icon4{
     display: inline-block;
@@ -682,170 +343,6 @@ button1:after {
     margin-left: 20px;
     margin-right: 20px;
 }
-
-/*大きい画面*/
-@media(min-width:768px){
-    .BOX003 {
-        margin-left: 100px;
-        position: absolute;
-    }
-    
-    .BOX004 {
-        margin-left: 600px;
-        float: left;
-    }
-}
-
-/*小さい画面*/
-@media(max-width:768px){
-    .BOX004 {
-        margin-top: 260px;
-    }
-}
-
-/*紹介の配置*/
-.BOXleft {
-    float:left;
-}
-
-/*記事の配置*/
-.BOXright {
-    float:right;
-    width: 200px;
-    height: 536px;
-    border: solid 2px #0011;
-    text-align: center;
-    margin-right: 110px;
-    margin-top: 10px;
-    color:#fff;
-    position: relative;
-    font-family: 'Montserrat'sans-serif;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(../image/awa.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.BOXright h2 {
-    margin: 8px;
-}
-
-.BOXright p {
-    margin: auto;
-}
-
-/*小さい画面の記事*/
-@media(max-width:768px){
-    .BOXright{
-        width: 100%;
-        height: 440px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 17px;
-    }
-    
-    /*記事の中身*/
-    .kiji{
-        margin: 10px;
-        width: auto;
-        height:240px;
-        color: #fff;
-        font-family:fantasy;
-    }
-    
-    .kiji p {
-        float: right;
-        font-size: 25px;
-    }
-    
-    /*記事のruby*/
-    .kiji rt {
-        font-size: auto;
-    }
-    
-    /*最新の情報*/
-    .saisin {
-        width:auto;
-        height: 80px;
-        background-color: rgba(255,255,255,0.7);
-    }
-    
-    /*昨日の情報*/
-    .kinou {
-        width: auto;
-        height: 80px;
-        background-color: rgba(255,255,255,0.5);
-    }
-    
-    /*一昨日の情報*/
-    .ototui {
-        width:auto;
-        height: 80px;
-        background-color: rgba(255,255,255,0.3);
-    }
-    
-    /*天気記号*/
-    .kigou {
-        margin-top: 20px;
-        font-size: 38px;
-        margin-left: 10px;
-        float: left;
-    }
-
-}
-
-/*大きい画面の時の記事*/
-@media(min-width:768px){
-    .BOXright {
-        width:300px;
-        
-    }
-    
-    .kiji{
-        margin: 10px;
-        height: 330px;
-        color: #fff;
-        font-family:fantasy;
-        font-size: 25px;
-    }
-    
-    .kiji p {
-        font-size: 30px;
-    }
-    
-    /*記事のruby*/
-    .kiji rt {
-        font-size: 10px;
-    }
-    
-    /*最新の情報*/
-    .saisin {
-        width:auto;
-        height: 110px;
-        background-color: rgba(255,255,255,0.7);
-    }
-    
-    /*昨日の情報*/
-    .kinou {
-        width: auto;
-        height: 110px;
-        background-color: rgba(255,255,255,0.5);
-    }
-    
-    .ototui {
-        width:auto;
-        height: 110px;
-        background-color: rgba(255,255,255,0.3);
-    }
-
-    .kigou {
-        margin-top: 35px;
-        font-size: 40px;
-        margin-left: 5px;
-        margin-right: 5px;
-        float: left;
-    }
-}
-
 /*記事アイコン*/
 .icon5 {
     display: inline-block;
@@ -860,12 +357,1361 @@ button1:after {
     margin-top: 5px;
 }
 
-/*もっと見る*/
-.motto  a {
-        text-decoration:none;
-        color: aliceblue;
+/*トップに移動するボタン*/
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  background: #000;
+  opacity: 0.9;
+  border-radius: 15px;
+    z-index: 96;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/*WONDERFUL SEAの4つのこだわり大きい画面*/
+@media(min-width:768px){
+    /*こだわり紹介全体*/
+    .tokutyou{
+        position: relative;
+        padding: 2vw;
+        height: 34vw;
+        background-image: url(../image/nuno.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /*こだわり紹介メイン*/
+    .shoukai001{
+        width:60vw;
+        top: 5vw;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 3vw;
+        font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
+    }
+    
+    /*こだわりタイトル*/
+    .hai{
+        width: 19.3vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 1.3vw;
+    }
+    
+    /*こだわり4種類全て*/
+    .tyuuu{
+        margin-top: 2vw;
+        width: 19.3vw;
+        height: 28vw;
+        margin-left: 3.5vw;
+        float: left;
+    }
+    
+    .tyou{
+        margin-top: 0vw;
+        width: 19.3vw;
+        height: 24vw;
+        float: left;
+        border: solid 0.2vw #000;
+        border-radius: 13px;
+        background-image:url(../image/TOP.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*安心画像*/
+    .tyou2{
+        margin-top: 0vw;
+        width: 19.3vw;
+        height: 24vw;
+        float: left;
+        border: solid 0.2vw #000;
+        border-radius: 13px;
+        background-image:url(../image/FAN.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*少数画像*/
+    .tyou3{
+        margin-top: 0vw;
+        width: 19.3vw;
+        height: 24vw;
+        float: left;
+        border: solid 0.2vw #000;
+        border-radius: 13px;
+        background-image:url(../image/omise.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*親しみ画像*/
+    .tyou4{
+        margin-top: 0vw;
+        width: 19.3vw;
+        height: 24vw;
+        float: left;
+        border: solid 0.2vw #000;
+        border-radius: 13px;
+        background-image:url(../image/shokuji.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*お食事画像*/
+    
+    /*こだわり紹介文*/
+    .tooku01,.tooku02,.tooku03,.tooku04{
+        display: none;
+        position: absolute;
+        padding: 0.6vw;
+        margin-top: 1vw;
+        margin-left: 0.5vw;
+        width: 16.9vw;
+        background-color: #0009;
+        color: #fff;
+        font-size: 1vw;
+        font-family: serif;
+    }
+    
+    /*紹介文が出てくるボタン*/
+    .purasu{
+        position: relative;
+        width: auto;
+        height: 5vw;
+        background-color:#0007;
+        margin-top: 19vw;
+        text-align: center;
+        border-radius:8px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        color: #fff;
+        font-size: 3.5vw;  
+    }
+    .komono01,.komono02,.komono03,.komono04{
+        padding: 0;
+        border: none;
+        font-size: 29px;
+        opacity: 1;
+        cursor: pointer;
+        font-size: 3.5vw;
+        color: #ffff;
+        background-color:#0000;
+    }  
+}
+
+p17{
+        font-family:'Montserrat',sans-serif;
+    }
+
+/*WONDERFUL SEAの4つのこだわり小さい画面*/
+@media(max-width:767px){
+    /*こだわり紹介全体*/
+    .tokutyou{
+        position: relative;
+        padding: 3vw;
+        height: 330vw;
+        background-image: url(../image/nuno.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /*こだわり紹介全体*/
+    .shoukai001{
+        width:80vw;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 7vw;
+        font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
+    }
+    
+    /*こだわり4種類全て*/
+    .tyuuu{
+        width: 93vw;
+        margin-top: 8vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*こだわりタイトル*/
+    .hai{
+        width: 93vw;
+        height: 7vw;
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    .tyou{
+        width: 91.5vw;
+        height: 60vw;
+        border: solid 0.6vw #000;
+        border-radius: 13px;
+        background-image:url(../image/TOP.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*安心画像*/
+    .tyou2{
+        width: 91.5vw;
+        height: 60vw;
+        border: solid 0.6vw #000;
+        border-radius: 13px;
+        background-image:url(../image/FAN.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*少数画像*/
+    .tyou3{
+        width: 91.5vw;
+        height: 60vw;
+        border: solid 0.6vw #000;
+        border-radius: 13px;
+        background-image:url(../image/omise.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*親しみ画像*/
+    .tyou4{
+        width: 91.5vw;
+        height: 60vw;
+        border: solid 0.6vw #000;
+        border-radius: 13px;
+        background-image:url(../image/shokuji.jpg);
+        background-position: center;
+        background-size: cover;
+    }/*お食事画像*/
+    
+     /*こだわり紹介文*/
+    .tooku01,.tooku02,.tooku03,.tooku04{
+        display: none;
+        position: absolute;
+        padding: 0.6vw;
+        margin-top: 2.5vw;
+        margin-left: 2vw;
+        width: 86vw;
+        border-radius: 10px;
+        background-color: #0009;
+        color: #fff;
+        font-size: 3.71vw;
+        font-family: serif;
+    }
+    
+    /*紹介文が出てくるボタン*/
+    .purasu{
+        position: relative;
+        width: auto;
+        height: 15vw;
+        background-color:#0007;
+        margin-top: 45vw;
+        text-align: center;
+        border-radius:8px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        color: #fff;
+        font-size: 6vw;  
+    }
+    .komono01,.komono02,.komono03,.komono04{
+        padding: 0;
+        border: none;
+        font-size: 29px;
+        opacity: 1;
+        cursor: pointer;
+        font-size: 13vw;
+        color: #ffff;
+        background-color:#0000;
+    } 
+     
+}
+
+/*大きい画面のDIVINGトップページ*/
+@media(min-width:768px){
+    /*大きい画面のダイビング*/
+    .DIVING{
+        width: 100%;
+        height: 40vw;
+        border: solid 0.3vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 0.9vw;
+    }
+    
+    /*大きい画面サイズ*/
+    .DI001{
+        position: relative;
+        width: 100%;
+        height: 35vw;
+        background-image:url(../image/DI_haikei.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    /*DIVING & HOTEL の文字*/
+    .mo01,.mo03{
+        float: left;
+        position: absolute;
+        width: 21vw;
+        margin-top: 23vw;
+        margin-left: 2vw;
+        font-family: fantasy;
+        color: #fffa;
+        font-size: 7vw;
+    }
+    
+    p18{
+        font-size: 9vw;
+    }
+    
+    /*次ページの白枠*/
+    .tugipe01{
+        position: relative;
+        float: right;
+        width: 25%;
+        height:100%;
+        background-color: #fff7;
+    }
+    /*次のページへのボタン欄*/
+    .tugino01{
+        text-align: center;
+        width: 14vw;
+        height: 15vw;
+        margin-top: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        font-family: fantasy;
+        font-size: 2vw;
+        line-height: 6vw;
+    }
+    /*次へのアイコン、サイズ*/
+    .tugino01 i{
+        font-size: 8.5vw;
+        color: #fff;
+    }
+    .tugino01 i:hover{
+        color:#000;
+    }
+    
+    p19{
+        font-size: 1.4vw;
+    }
+    
+    /*下のダイビングの種類*/
+    .sitabu{
+        width: 100%;
+        height: 5vw;
+    }
+    
+    /*種類*/
+    .sita01{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/maou.jpg);
+        background-position:bottom;
+        background-size: cover;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 2vw;
+        color: #fff;
+        text-align: center;
+        line-height:2.8;
+    }
+    .sita02{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/DAI004.jpg);
+        background-position:center;
+        background-size: cover;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 2vw;
+        color: #fff;
+        text-align: center;
+        line-height:2.8;
+    }
+    .sita03{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/awa.jpg);
+        background-position:center;
+        background-size: cover;
+        font-size: 2vw;
+        color: #fff;
+        text-align: center;
+        font-family: "M PLUS Rounded 1c";
+        line-height:2.8;
+    }
+    .sita04{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/DAI001.jpg);
+        background-position:center;
+        background-size: cover;
+        font-size: 2vw;
+        color: #fff;
+        text-align: center;
+        font-family: "M PLUS Rounded 1c";
+        line-height:2.8;
+    }
+}
+
+/*小さい画面のDIVINGトップページ*/
+@media(max-width:767px){
+    /*大きい画面のダイビング*/
+    .DIVING{
+        width: 100%;
+        height: 142.5vw;
+        border: solid 1vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 3vw;
+    }
+    
+    /*小さい画面サイズ*/
+    .DI001{
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        background-image:url(../image/DI_haikei.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    /*DIVINGの文字*/
+    .mo01,.mo03,.mo05{
+        float: left;
+        position: absolute;
+        width: 38vw;
+        margin-top: 72vw;
+        margin-left: 2vw;
+        font-family:fantasy;
+        color: #fffa;
+        font-size: 10vw;
+    }
+    
+    p18{
+        font-size: 13vw;
+    }
+    
+    /*次ページの白枠*/
+    .tugipe01,.tugipe03,.tugipe05{
+        position: relative;
+        float: right;
+        width: 30%;
+        height:100%;
+        background-color: #fff7;
+    }
+    
+    /*次のページへのボタン欄*/
+    .tugino01{
+        text-align: center;
+        width: 80%;
+        height: 15vw;
+        margin-top: 8vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000;
+        font-family: fantasy;
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+    /*次へのアイコン、サイズ*/
+    .tugino01 i{
+        font-size: 15vw;
+        color: #fff;
+    }
+    .tugino01 i:hover{
+        color:#000;
+    }
+    
+    /*下のダイビングの種類*/
+    .sitabu{
+        width: 100%;
+    }
+    
+     /*種類*/
+    .sita01{
+        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/maou.jpg);
+        background-position:bottom;
+    }
+    .sita02{
+        width: 100%;
+        height: 9vw;
+        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/taiken01.jpg);
+        background-position:bottom;
+    }
+    .sita03{
+        width: 50%;
+        height: 26vw;
+        background-size: cover;
+        font-size: 4.5vw;
+        font-family: "M PLUS Rounded 1c";
+        color: #fff;
+        float: left;
+        text-align: center;
+        line-height:6;
+        background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.0)),url(../image/awa.jpg);
+        background-position:center;
         
     }
+    .sita04{
+        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/DAI001.jpg);
+        background-position:center;
+    }
+    
+    .sita01,.sita02,.sita04{
+        width: 50%;
+        height: 26vw;
+        background-size: cover;
+        font-size: 5vw;
+        font-family: "M PLUS Rounded 1c";
+        color: #fff;
+        float: left;
+        text-align: center;
+        line-height:5;
+    }
+}
+
+/*大きい画面のFISHトップページ*/
+@media(min-width:768px){
+    /*大きい画面のフィッシュ*/
+    .FISH{
+        width:100%;
+        height:41vw;
+        border: solid 0.3vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 0.9vw;
+    }
+    
+    /*大きい画面*/
+    .FI001{
+        width: 100%;
+        height:35vw;
+        background-image: url(../image/FI_haikei.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    /*次ページの白枠*/
+    .tugipe02{
+        position: relative;
+        float: left;
+        width: 25%;
+        height:100%;
+        background-color: #fff8;
+    }
+    /*次のページへのボタン欄*/
+    .tugino02,.tugino03{
+        text-align: center;
+        width: 14vw;
+        height: 29vw;
+        margin-top: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        font-family: fantasy;
+        font-size: 2vw;
+        line-height: 6vw;
+    }
+    /*次へのアイコン、サイズ*/
+    .tugino02 i{
+        font-size: 10vw;
+        color: #fff;
+    }
+    .tugino02 i:hover{
+        color:#000;
+    }
+    
+    p20{
+        font-size: 3vw;
+    }
+    
+    .mo02,.mo04{
+        float:right;
+        position:relative;
+        width: 16vw;
+        margin-top: 24vw;
+        margin-right: 2vw;
+        font-family: fantasy;
+        color: #fffa;
+        font-size: 7vw;
+    
+    }
+    
+    /*下の魚の種類*/
+    .sitabu02{
+        width: 100%;
+        height: 6vw;
+    }
+    
+    .gyo01{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/manta01.jpg);
+    }
+    .gyo02{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/umigame02.jpg);
+    }
+    .gyo03{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/rounin.jpg);
+    }
+    .gyo04{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/ei04.jpg);
+    }
+    .gyo05{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/hosoka05.jpg);
+    }
+    .gyo06{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/sazanami06.jpg);
+    }
+    .gyo07{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/akane07.jpg);
+    }
+    .gyo08{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/oniokoze08.jpg);
+    }
+    .gyo09{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/sinnderera09.jpg);
+    }
+    .gyo10{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/tubame10.jpg);
+    }
+    .gyo11{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kumanomi11.jpg);
+    }
+    .gyo12{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/nanyou12.jpg);
+    }
+    .gyo13{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kaeruanko13.jpg);
+    }
+    .gyo14{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/akebono14.jpg);
+    }
+    .gyo15{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/gurukuma15.jpg);
+    }
+    .gyo16{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/hanagoi16.jpg);
+    }
+    .gyo17{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/tyoutyouo17.jpg);
+    }
+    .gyo18{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kasago18.jpg);
+    }
+    .gyo19{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/houseki19.jpg);
+    }
+    .gyo20{
+        background-color:#000;
+    }
+    .gyo01,.gyo02,.gyo03,.gyo04,.gyo05,.gyo06,.gyo07,.gyo08,.gyo09,.gyo10,.gyo11,.gyo12,.gyo13,.gyo14,.gyo15,.gyo16,.gyo17,.gyo18,.gyo19,.gyo20{
+        text-align: center;
+        width: 10%;
+        height: 3vw;
+        float: left;
+        line-height: 3vw;
+        background-size: cover;
+        background-position: center;
+        font-family: serif;
+        color: #fff;
+        font-size: 0.9vw;
+    }
+}
+
+/*小さい画面のFISHトップページ*/
+@media(max-width:767px){
+    /*大きい画面のフィッシュ*/
+    .FISH{
+        width:100%;
+        height:140.5vw;
+        border: solid 1vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 3vw;
+    }
+    /*大きい画面*/
+    .FI001{
+        width: 100%;
+        height:80vw;
+        background-image: url(../image/FI_haikei.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    /*次ページの白枠*/
+    .tugipe02{
+        position: relative;
+        float: left;
+        width: 30%;
+        height:100%;
+        background-color: #fff8;
+    }
+    /*次のページへのボタン欄*/
+    .tugino02,.tugino03{
+        text-align: center;
+        width: 80%;
+        height: 85%;
+        margin-top: 8vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000;
+        font-family: fantasy;
+        line-height:14vw;
+    }
+    /*次へのアイコン、サイズ*/
+    .tugino02 i{
+        font-size: 18vw;
+        color: #fff;
+    }
+    .tugino02 i:hover{
+        color:#000;
+    }
+    
+    p20{
+        font-size: 6vw;
+    }
+    
+    .mo02{
+        float:right;
+        position:relative;
+        width: 23vw;
+        margin-top: 62vw;
+        margin-right: 2vw;
+        font-family: fantasy;
+        color: #fffc;
+        font-size: 10vw;
+    
+    }
+    
+    /*下の魚の種類*/
+    .sitabu02{
+        width: 100%;
+        height: 60vw;
+    }
+    
+    .gyo01{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/manta01.jpg);
+    }
+    .gyo02{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/umigame02.jpg);
+    }
+    .gyo03{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/rounin.jpg);
+    }
+    .gyo04{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/ei04.jpg);
+    }
+    .gyo05{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/hosoka05.jpg);
+    }
+    .gyo06{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/sazanami06.jpg);
+    }
+    .gyo07{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/akane07.jpg);
+    }
+    .gyo08{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/oniokoze08.jpg);
+    }
+    .gyo09{
+        text-align: center;
+        width: 25%;
+        height: 12vw;
+        float: left;
+        font-size: 2.7vw;
+        line-height: 11vw;
+        background-size: cover;
+        background-position: center;
+        font-family: serif;
+        color: #fff;
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/sinnderera09.jpg);
+    }
+    .gyo10{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/tubame10.jpg);
+    }
+    .gyo11{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kumanomi11.jpg);
+    }
+    .gyo12{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/nanyou12.jpg);
+    }
+    .gyo13{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kaeruanko13.jpg);
+    }
+    .gyo14{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/akebono14.jpg);
+    }
+    .gyo15{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/gurukuma15.jpg);
+    }
+    .gyo16{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/hanagoi16.jpg);
+    }
+    .gyo17{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/tyoutyouo17.jpg);
+    }
+    .gyo18{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/kasago18.jpg);
+    }
+    .gyo19{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/houseki19.jpg);
+    }
+    .gyo20{
+        background-color: #3bfa;
+    }
+    .gyo01,.gyo02,.gyo03,.gyo04,.gyo05,.gyo06,.gyo07,.gyo08,.gyo10,.gyo11,.gyo12,.gyo13,.gyo14,.gyo15,.gyo16,.gyo17,.gyo18,.gyo19,.gyo20{
+        text-align: center;
+        width: 25%;
+        height: 12vw;
+        float: left;
+        font-size: 2.9vw;
+        line-height: 12vw;
+        background-size: cover;
+        background-position: center;
+        font-family: serif;
+        color: #fff;
+    }
+}
+
+/*大きい画面のHOTELトップページ*/
+@media(min-width:768px){
+    /*大きい画面のホテル*/
+    .HOTEL{
+        width: 100%;
+        height: 40vw;
+        border: solid 0.3vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 0.9vw;
+    }
+    
+    /*大きい画面サイズ*/
+    .HO001{
+        position: relative;
+        width: 100%;
+        height: 35vw;
+        background-image:url(../image/hotel01.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    /*次ページの白枠*/
+    .tugipe03{
+        position: relative;
+        float: right;
+        width: 25%;
+        height:100%;
+        background-color: #fff8;
+    }
+    /*次へのアイコン、サイズ*/
+    .tugino03 i{
+        font-size: 10vw;
+        color: #fff;
+    }
+    .tugino03 i:hover{
+        color:#000;
+    }
+    
+    /*下部分*/
+    .sitabu03,.sitabu04{
+        width: 100%;
+        height: 5vw;
+    }
+    
+    .hun01,.hun02{
+        width: 50%;
+        height: 5vw;
+        float: left;
+        background-size: cover;
+        background-position: center;
+        font-family: serif;
+        font-size: 2.5vw;
+        text-align: center;
+        line-height:2.5;
+    }
+    .hun01{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/omise02.jpg);
+    }
+    .hun02{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/huniki_01.png); 
+    }
+}
+
+/*小さい画面のHOTELトップページ*/
+@media(max-width:767px){
+    /*大きい画面のホテル*/
+    .HOTEL{
+        width: 100%;
+        height: 130.5vw;
+        border: solid 1vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 3vw;
+    }
+    
+    /*小さい画面サイズ*/
+    .HO001{
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        background-image:url(../image/hotel01.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    /*次へのアイコン、サイズ*/
+    .tugino03 i{
+        font-size: 18vw;
+        color: #fff;
+    }
+    .tugino03 i:hover{
+        color:#000;
+    }
+    
+    .hun01,.hun02{
+        width: 50%;
+        height: 40vw;
+        float: left;
+        background-size: cover;
+        background-position: center;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 7vw;
+        text-align: center;
+        line-height:6;
+    }
+    .hun01{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/omise02.jpg);
+    }
+    .hun02{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/huniki_01.png); 
+    }
+}
+
+/*大きい画面のMEALトップページ*/
+@media(min-width:768px){
+    /*大きい画面の食事*/
+    .MEAL{
+        width: 100%;
+        height: 40vw;
+        border: solid 0.3vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 0.9vw;
+    }
+    
+    /*大きい画面サイズ*/
+    .ME001{
+        position: relative;
+        width: 100%;
+        height: 35vw;
+        background-image:url(../image/shokuji02.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .shoku01,.shoku02{
+        width: 50%;
+        height: 5vw;
+        float: left;
+        background-size: cover;
+        background-position: center;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 2.5vw;
+        text-align: center;
+        line-height:2.5;
+    }
+    .shoku01{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/shokuji03.jpg);
+    }
+    .shoku02{
+        background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.0)),url(../image/shokuji.jpg); 
+    }
+}
+
+/*小さい画面のMEALトップページ*/
+@media(max-width:767px){
+    /*小さい画面の食事*/
+    .MEAL{
+        width: 100%;
+        height: 130.5vw;
+        border: solid 1vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 3vw;
+    }
+    
+    /*小さい画面サイズ*/
+    .ME001{
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        background-image:url(../image/shokuji02.jpg);
+        background-size: cover;
+    }
+    
+    .mo04{
+        float:right;
+        position:relative;
+        width: 24vw;
+        margin-top: 73vw;
+        margin-right: 2vw;
+        font-family: fantasy;
+        color: #000a;
+        font-size: 10vw;
+    
+    }
+    
+    .shoku01,.shoku02{
+        width: 50%;
+        height: 40vw;
+        float: left;
+        background-size: cover;
+        background-position: center;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 7vw;
+        text-align: center;
+        line-height:6;
+    }
+    .shoku01{
+        background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.0)),url(../image/shokuji03.jpg);
+    }
+    .shoku02{
+        background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.0)),url(../image/shokuji.jpg);
+    }
+}
+
+/*大きい画面のインフォメーショントップページ*/
+@media(min-width:421px){
+    .INFORMATION{
+        width: 100%;
+        height: 45.2vw;
+        border: solid 0.3vw #000;
+        border-right: 0px;
+        border-left: 0px;
+        
+    }
+    
+    /*左側のインフォメーショントップ*/
+    .information{
+        width: 100%;
+        height: 35vw;
+    }
+    
+    /*大きい画面サイズ*/
+    .IN001{
+        position: relative;
+        width: 100%;
+        height: 35vw;
+        background-image: url(../image/tenki.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    /*INFORMATIONの文字の位置*/
+    .mo05{
+        position: absolute;
+        font-size: 6vw;
+        font-family: fantasy;
+        width: 35vw;
+        margin-top: 24vw;
+        margin-left: 1vw;
+        color: #fffc;
+    }
+    
+    /*次ページの白枠*/
+    .tugipe05{
+        float: right;
+        width:20%;
+        height: 100%;
+        background-color: #fff8;
+    }
+    .tugino05{
+        width: 80%;
+        margin-top: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3vw;
+        text-align: center;
+        line-height: 2.5;
+    }
+    .tugino05 i{
+        font-size: 8vw;
+        color: #fff;
+    }
+    .tugino05 i:hover{
+        color: #000;
+    }
+    /* 電話欄*/
+    .denwa{
+        position: relative;
+        width: 100%;
+        height: 5vw;
+    }
+    
+    /*電話＆時間記載*/
+    .otoi01{
+        float: left;
+        width: 30%;
+        height: 5vw;
+        text-align: center;
+        font-size: 1.3vw;
+        font-family: serif;
+        line-height: 4.2;
+    }
+    .otoi02{
+        font-family: serif;
+        float: left;
+        text-align: center;
+        font-size: 1vw;
+        width: 39%;
+        height: 4.4vw;
+        padding: 0.2vw;
+        line-height: 0.6;
+    }
+    
+    /*電話の黒枠*/
+    .waku01{
+        position: relative;
+        margin-top: 0.15vw;
+        border: solid 0.1vw #000;
+        height: 4vw;
+        border-radius: 10px;
+    }
+    
+    .otoi02 i{
+        display: inline-block;
+        font-size: 0.9vw;
+        width: 2vw;
+        line-height: 2vw;
+        margin-top: 0.2vw;
+        margin-bottom: 0.4vw;
+        border-radius: 50%;
+        text-align: center;
+        background-color:#000a;
+        color: #fff;
+    }
+    .otoi02 a{
+        text-decoration: none;
+        font-size: 1.8vw;
+        color: #000;
+    }
+    .otoi02 a:hover{
+        color:cornflowerblue;
+    }
+    
+    .otoi03{
+        float: left;
+        width: 29.3%;
+        height: 4vw;
+        font-family: serif;
+        font-size: 0.9vw;
+        line-height: 1.9;
+        padding: 0.6vw;
+    }
+
+    .sa-bi01{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-size: cover;
+        font-family: "M PLUS Rounded 1c";
+        background-position:center;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/otooku.jpg);
+        font-size: 2vw;
+        color: royalblue;
+        text-align: center;
+        line-height:2.8;
+    }
+    .sa-bi02{
+        background-position:center;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/tizu01.png);
+    }
+    .sa-bi03{
+        background-position: center;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/masa-ji.jpg);        
+    }
+    .sa-bi04{
+        background-position:center;
+        background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0)),url(../image/tenki02.jpg);
+    }
+    
+    .sa-bi02,.sa-bi03,.sa-bi04{
+        width: 25%;
+        height: 5vw;
+        float: left;
+        background-size: cover;
+        font-family: "M PLUS Rounded 1c";
+        font-size: 2vw;
+        color: #fff;
+        text-align: center;
+        line-height:2.8;
+    }
+    
+    .mamewaza_weather{
+        display: none;
+    }   
+}
+
+/*小さい画面のインフォメーショントップページ*/
+@media(max-width:420px){
+    .INFORMATION{
+        width: 100%;
+        height: 187.5vw;
+        border: solid 1vw #000;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    
+    /*小さい画面サイズ*/
+    .IN001{
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        background-image:url(../image/tenki.jpg);
+        background-size: cover;
+    }
+    /*次への文字サイズ*/
+    .tugino05{
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vw;
+        font-size: 6vw;
+        line-height: 2.8;
+    }
+    
+    /*次へのアイコン、サイズ*/
+    .tugino05 i{
+        font-size: 18vw;
+        color: #fff;
+    }
+    .tugino03 i:hover{
+        color:#000;
+    }
+    
+    /*電話欄*/
+    .denwa{
+        width: 100%;
+        height: 45vw;
+        background-color:#3cf6;
+        font-family: serif;
+    }
+    .denwa02{
+        position: absolute;
+        width: 80%;
+        height: 32vw;
+        background-color: #fff;
+        margin-top: 3vw;
+        margin-left: 7vw;
+        padding: 3vw;
+    }
+    
+    .otoi01{
+        display: none;
+    }
+    .otoi02 i{
+        display: inline-block;
+        font-size: 4vw;
+        width: 8vw;
+        line-height: 8vw;
+        margin-top: 0.2vw;
+        margin-bottom: 0.4vw;
+        border-radius: 50%;
+        text-align: center;
+        background-color:#000a;
+        color: #fff;
+    }
+    
+    .otoi02{
+        text-align: center;
+        font-size: 4.5vw;
+        margin-top: 1vw;
+    }
+    .otoi02 a{
+        text-decoration: none;
+        font-size: 8.9vw;
+        color: #000;
+    }
+    .otoi02 a:hover{
+        color:cornflowerblue;
+    }
+    
+    .otoi03{
+        font-size: 2.5vw;
+    }
+    
+    /*種類*/
+    .sa-bi01{
+       background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/otooku.jpg);
+        background-position:bottom; 
+    }
+    .sa-bi02{
+       background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/tizu01.png);
+        background-position:bottom; 
+    }
+    .sa-bi03{
+       background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/masa-ji.jpg);
+        background-position:bottom; 
+    }
+    .sa-bi04{
+       background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.0)),url(../image/tenki02.jpg);
+        background-position:bottom; 
+    }
+    
+    .sa-bi01,.sa-bi02,.sa-bi03,.sa-bi04{
+        width: 50%;
+        height: 26vw;
+        background-size: cover;
+        font-size: 6vw;
+        font-family: "M PLUS Rounded 1c";
+        float: left;
+        text-align: center;
+        line-height:4.5;
+    }
+
+    .mamewaza_weather{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+        z-index: 80;
+    }
+}
+
+
+
+
 
 
 
@@ -874,7 +1720,7 @@ button1:after {
 /*フッター全体*/
 footer {
     clear: both;
-    margin-top: 20px;
+    margin-top: 10px;
     color: aliceblue;
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../image/footer.jpg);
     background-position: center;
@@ -887,7 +1733,6 @@ footer {
         margin-top: 0px;
     }
 }
-
 
 footer .container { 
     padding: 20px 20px;
@@ -915,7 +1760,6 @@ footer .container {
 .footA{
     margin-bottom: 10px;
 }
-
 .footA a{
     color: aliceblue;
     text-decoration: none;
@@ -925,20 +1769,17 @@ footer .container {
 .footB div {
     margin-bottom: 10px;
 }
-
 .footB h3 {
     margin-top: 0;
     margin-bottom: 3px;
     border-bottom: solid 3px;
     font-size: 18px;
 }
-
 .footB ul {
     margin: 0;
     padding:0;
     list-style: none;
 }
-
 .footB a {
     display: block;
     padding: 8px;
@@ -946,7 +1787,6 @@ footer .container {
     font-size: 14px;
     text-decoration: none;
 }
-
 .footB a:hover {
     background-color: rgba(0,0,0,0.3);
 }
@@ -965,19 +1805,16 @@ footer .container {
     }
 }
 
-
 /*フッターD　SNSメニュー*/
 .footD {
     margin-top: 0px;
 }
-
 .footD ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .footD a {
     display: block;
     padding: 0;
@@ -992,11 +1829,9 @@ footer .container {
     text-align: center;
     margin-bottom: 9px;
 }
-
 .footD a:hover {
     background-color: rgba(0,0,0,0.4);
 }
-
 /*フッターC　コピーライト*/
 .footC {
     font-size: 15px;

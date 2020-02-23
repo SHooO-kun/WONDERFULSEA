@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WONDERFUL SEA </title>
 <link rel="stylesheet" type="text/css" media="all" href="css/wonderful_sea.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <script src="https://kit.fontawesome.com/88d8558cad.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
@@ -18,8 +20,42 @@
     $(function() {
         $('h1').hide().fadeIn(2900);
     })
+        
+    $(function(){
+        $(".komono01").click(function(){
+            $(".tooku01").fadeToggle();
+        })
+    })    
+    $(function(){
+        $(".komono02").click(function(){
+            $(".tooku02").fadeToggle();
+        })
+    })   
+    $(function(){
+        $(".komono03").click(function(){
+            $(".tooku03").fadeToggle();
+        })
+    })  
+    $(function(){
+        $(".komono04").click(function(){
+            $(".tooku04").fadeToggle();
+        })
+    }) 
+        
+    $(function(){
+        $('a[href^="#"]').click(function(){
+          // スクロールの速度
+          var speed = 500; // ミリ秒で記述
+          var href= $(this).attr("href")
+          var target = $(href == "#" || href == "" ? 'html' : href)
+          var position = target.offset().top
+          $('body,html').animate({scrollTop:position}, speed, 'swing')
+          return false;
+        })
+      })    
+        
     </script>
-    
+      
 </head>
 
 <body>
@@ -42,36 +78,40 @@
                     <i class="fas fa-chevron-circle-right"></i>
                     DIVING
                     <div class="headB_zoku"><br>
-                        <p1><b>ダイビングを楽しみたい方へ</b></p1></div></a></li>
+                        <p1><b>ダイビングを楽しみたい方へ</b></p1></div></a></li><!--DIVIG-->
                 <li><a href="#">
                     <i class="fas fa-chevron-circle-right"></i>
                     FISH
                     <div class="headB_zoku"><br>
-                        <p1><b>宮古島の海で出会えるお魚たちについて</b></p1></div></a></li>
+                        <p1><b>宮古島の海で出会えるお魚たちについて</b></p1></div></a></li><!--FISH-->
                 <li><a href="#">
                     <i class="fas fa-chevron-circle-right"></i>
                     HOTEL
                     <div class="headB_zoku"><br>
-                        <p1><b>ダイビング旅行のお泊りでご利用について</b></p1></div></a></li>
+                        <p1><b>ダイビング旅行のお泊りでご利用について</b></p1></div></a></li><!--HOTEL-->
                 <li><a href="#">
                     <i class="fas fa-chevron-circle-right"></i>
                     MEAL
                     <div class="headB_zoku"><br>
-                        <p1><b>朝食と昼ご飯について</b></p1></div></a></li>
+                        <p1><b>朝食と昼ご飯について</b></p1></div></a></li><!--MEAL-->
                 <li><a href="#">
                     <i class="fas fa-chevron-circle-right"></i>
                     CONTACT
                     <div class="headB_zoku"><br>
-                        <p1><b>お問い合わせやご相談などはこちら</b></p1></div></a></li>
+                        <p1><b>お問い合わせやご相談などはこちら</b></p1></div></a></li><!--CONTENT-->
             </ul>
             </nav>
         </div>
     </header>
+    
+    <div id="page_top">
+        <a href="#DDaa"></a>
+    </div><!--トップに戻るボタン-->
 
-        <section class="conA">
+        <section class="conA" id="DDaa">
         <div class="container">
             <h1>WONDERFUL SEA</h1>
-            <p>最高のダイビングと楽しい食事を</p>
+            <p>宮古島でダイビングと楽しい旅行を</p>
             <a href="DivingPage.html">Let's Diving!</a>
         </div>
         </section>
@@ -96,7 +136,7 @@
                 </div>
             <div class="icon5">
             <i class="fas fa-pen-nib"></i>
-        </div>
+            </div>
             <h2>最高のダイビング旅行になりますように</h2>
             <p>当ダイビングショップでは一日少人数ではありますが、お客様の大切な思い出となるダイビングを実現し、お泊りの際はホテルでゆったりとした時間を過ごしていただけるよう心掛けております。</p>
             <a href="#">プランに関してはこちら</a>
@@ -104,16 +144,16 @@
         </div>
     </section>
     
-    
-        
+    <div class="henkoumae">
+<!-- 
     <div class="BOXleft">
-    <div class="BOX00A"><!--ショップと魚紹介-->
+    <div class="BOX00A"><!--ショップと魚紹介
         
         <div class="BOX001">
             <button1 class="yellow">
                 <div class="icon1">
                     <i class="fas fa-store-alt"></i>
-                </div><!--ショップアイコン-->
+                </div><!--ショップアイコン
                     <h2>お客様がダイビングでの大事な思い出を</h2>
                 <p>ダイビングに来ていただいたお客様にWONDERFUL SEAを使ってダイビング旅行して良かった!と感じていただけるよう心掛けています。</p>
             </button1>
@@ -122,42 +162,42 @@
     
         <div class="BOX002">
             <div class="BOX006">
-            </div><!--魚画像-->
+            </div><!--魚画像
             <div class="BOX007">
                 <div class="icon2">
                     <i class="fas fa-fish"></i>
-                </div><!--魚アイコン-->
+                </div><!--魚アイコン
                     <h2>海のお魚たちの素晴らしい世界への旅を</h2>
                 <p>海に潜った時の魚たちが泳ぐ景色や自然の地形、普段地上では見ることのできない○○○の海の景色を堪能していただきたいと思っております。</p>
-            </div><!--お魚紹介文-->
-        </div><!--ダイビングショップ＋画像-->
-    </div><!--BOX00A-->
+            </div><!--お魚紹介文
+        </div><!--ダイビングショップ＋画像
+    </div><!--BOX00A
 
-    <div class="BOX00B"><!--三つ目と四つ目-->
-        <div class="BOX003"><!--宿紹介-->
+    <div class="BOX00B"><!--三つ目と四つ目
+        <div class="BOX003"><!--宿紹介
             <button3 class="blue">
                 <div class="icon3">
                     <i class="fas fa-home"></i>
-                </div><!--ホームアイコン-->
+                </div><!--ホームアイコン
                     <h2>落ち着いた雰囲気と過ごしやすい環境を</h2>
                 <p>お泊り宿の雰囲気はお客様がが過ごしやすく、ダイビングに行く前やダイビングを終えた際、ゆったりでき、心地よく食事を楽しんでもらえる空間を心掛けています。</p>
-            </button3><!--宿紹介-->
-        </div><!--BOX003-->
+            </button3><!--宿紹介
+        </div><!--BOX003
     
     
         <div class="BOX004">
-            <div class="BOX008"><!--食事画像-->
+            <div class="BOX008"><!--食事画像
             </div>
-            <div class="BOX009"><!--食事紹介-->
+            <div class="BOX009"><!--食事紹介
                 <div class="icon4">
                     <i class="fas fa-utensils"></i>
-                </div><!--食事アイコン-->
+                </div><!--食事アイコン
                     <h2>ダイビング旅行に合った楽しい食事を</h2>
                     <p>食事は朝食とランチでご用意いたします。洋食と和食の2つから選んでいただき、ダイビングに影響のないよう、健康面を考えた食事を提供いたします。</p>
-            </div><!--BOX009-->
-        </div><!--食事-->
-    </div><!--三つ目と四つ目-->
-    </div><!--紹介右側-->
+            </div><!--BOX009
+        </div><!--食事
+    </div><!--三つ目と四つ目
+    </div><!--紹介右側
     
     
     <div class="BOXright">
@@ -206,6 +246,236 @@
         <p><a href="#">もっと見る…</a></p>
         </div>
     </div>
+-->
+    </div><!--変更前のトップ紹介-->
+
+    <div class="tokutyou">
+        <div class="shoukai001">
+            <b>～WONDERFUL SEA の <font color="#ff6633">4</font> つのこだわり～</b>
+        </div><!--4つのこだわり-->
+        
+        <div class="tyuuu">
+        <div class="hai"><b>①安心・安全なダイビング!!</b></div>
+        <div class="tyou">
+            
+            <div class="tooku01"><b>
+            お客様とダイビングをするにあたり、事前に体調確認や器材の使用方法の確認を徹底し、海の中での安全を第一に考え、ダイビングをサポートします！<br>
+            ショップにご予約していただく際もお客様のご不明点や不安な点を取り除き、当日のダイビングを最高に楽しんでいただくよう全力を尽くしています!!
+            </b></div>   
+            
+            <div class="purasu">
+                <button class="komono01"><i class="far fa-caret-square-up"></i></button>
+            </div>
+        </div><!--安心安全なダイビング!!-->
+        </div><!--安心安全なダイビング!!-->
+         
+        <div class="tyuuu">
+        <div class="hai"><b>②少人数制で安心♪</b></div>
+        <div class="tyou2">
+            
+            <div class="tooku02"><b>
+                <p17>WONDERFUL SEA</p17>では少人数でダイビングを案内しております。<br>1人1人のお客様の安全を確保するとともに、ダイビングのスキルアップにつなげます！<br>少数なので皆さんとのコミュニケーションも取りやすくなり、ダイビングも旅行も、お客様全員の方とワイワイ楽しむことができることも魅力です!!
+            </b></div>
+            
+            <div class="purasu">
+                <button class="komono02"><i class="far fa-caret-square-up"></i></button>
+            </div>
+        </div><!--少数精鋭で安心-->
+        </div><!--少人数制で安心-->
+          
+        <div class="tyuuu">
+        <div class="hai"><b>③親しみやすいお店と宿☆</b></div>
+        <div class="tyou3">
+            
+            <div class="tooku03"><b>
+            当ショップの雰囲気はおしゃれなカフェをイメージし、ダイビングを楽しんでいただいた後の食事や休憩の時間もゆったりと過ごせる空間が特徴です。<br>
+            お泊りいただく宿もダイビング旅行の疲れを癒すため、清潔で親しみやすい空間を心掛けておりますので、思う存分おくつろぎいただけます!!
+            </b></div>
+            
+            <div class="purasu">
+                <button class="komono03"><i class="far fa-caret-square-up"></i></button>
+            </div>
+        </div><!--清潔で親しみやすいお店-->
+        </div><!--清潔で親しみやすいお店-->
+        
+        <div class="tyuuu">
+        <div class="hai"><b>④旅行に合ったお食事🍴</b></div>
+        <div class="tyou4">
+            
+            <div class="tooku04"><b>
+            お食事は事前に予約していただいた際にご利用を希望していただけると当日ご用意致します。<br>
+            <p17>WONDERFUL SEA</p17>では朝食とランチでメニューの中からお客様のご要望もお聞きし、提供いたします。ダイビングに影響の無いよう健康面を考えたメニューが選べるというところも魅力の1つです!!
+            </b></div>
+            
+            <div class="purasu">
+                <button class="komono04"><i class="far fa-caret-square-up"></i></button>
+            </div>
+        </div><!--旅行に合ったお食事-->
+        </div><!--旅行のあった食事-->
+        
+        
+    </div><!--WONDERFULSEAの特徴欄-->
+    
+    <div class="DIVING">
+        <div class="DI001">
+            <div class="mo01"><b><p18>D</p18>IVING</b></div>
+            <div class="tugipe01">
+                <div class="tugino01">
+                    <b>DIVINGページへ</b>
+                    <a href="DivingPage.html">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                    <br>
+                    <p19><b>DIVINGプランについて</b></p19>
+                    <a href="#">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sitabu">
+            <div class="sita01"><b>ファンダイビング</b></div>
+            <div class="sita02"><b>体験ダイビング</b></div>
+            <div class="sita03"><b>リフレッシュダイビング</b></div>
+            <div class="sita04"><b>ライセンス</b></div>
+        </div>
+    
+    
+    </div><!--ダイビングトップ-->
+    
+    <div class="FISH">
+        <div class="FI001">
+            <div class="mo02"><b><p18>F</p18>ISH</b></div>
+            <div class="tugipe02">
+                <div class="tugino02">
+                    <p20><b>宮古島のお魚紹介ページへ</b></p20>
+                    <a href="#">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sitabu02">
+            <div class="gyo01"><b>マンタ</b></div>
+            <div class="gyo02"><b>ウミガメ</b></div>
+            <div class="gyo03"><b>ロウニンアジ</b></div>      
+            <div class="gyo04"><b>マダラトビエイ</b></div>
+            <div class="gyo05"><b>ホソカマス</b></div>
+            <div class="gyo06"><b>サザナミヤッコ</b></div>
+            <div class="gyo07"><b>アカネハナゴイ</b></div>
+            <div class="gyo08"><b>オニダルマオコゼ</b></div>
+            <div class="gyo09"><b>シンデレラウミウシ</b></div>
+            <div class="gyo10"><b>ツバメウオ</b></div>
+            <div class="gyo11"><b>カクレクマノミ</b></div>
+            <div class="gyo12"><b>ナンヨウハギ</b></div>
+            <div class="gyo13"><b>カエルアンコウ</b></div>
+            <div class="gyo14"><b>アケボノハゼ</b></div>
+            <div class="gyo15"><b>グルクマ</b></div>
+            <div class="gyo16"><b>ハナゴイ</b></div>
+            <div class="gyo17"><b>チョウチョウオ</b></div>
+            <div class="gyo18"><b>ハナミノカサゴ</b></div>
+            <div class="gyo19"><b>ホウセキキントキ</b></div>
+            <div class="gyo20"><b><font color="#fff">etc..</font></b></div>
+        </div>
+    
+    </div><!--フィッシュトップ-->
+    
+    <div class="HOTEL">
+        <div class="HO001">
+            <div class="mo03"><b><p18>H</p18>OTEL</b></div>
+            <div class="tugipe03">
+                <div class="tugino03">
+                    <p20><b>お泊りの宿紹介ページへ</b></p20>
+                    <a href="#">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+            
+            
+            </div>
+        </div>
+        <div class="sitabu03">
+            <div class="hun01"><b>ショップ</b></div>
+            <div class="hun02"><b>ホテル</b></div>
+        </div>
+    </div><!--ホテルトップ-->
+    
+    <div class="MEAL">
+        <div class="ME001">
+            <div class="mo04"><b><p18>M</p18>EAL</b>
+            </div>
+            <div class="tugipe02">
+                <div class="tugino02">
+                    <p20><b><font color="#000">ショップ食事紹介ページへ</font></b></p20>
+                    <a href="#">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sitabu04">
+            <div class="shoku01"><b>朝食</b></div>
+            <div class="shoku02"><b>ランチ</b></div>
+        </div>
+        
+        
+    </div><!--食事トップ-->
+    
+    <div class="INFORMATION">
+    <div class="information">
+            <div class="IN001">
+                <div class="mo05">
+                    <b><p18>I</p18>NFORMATION</b>
+                </div>
+            <div class="tugipe05">
+                <div class="tugino05">
+                <b>最新情報<br>お知らせ<br>ページへ</b>
+                    <a href="#">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    <div class="denwa">
+        <div class="denwa02">
+            <div class="otoi01">
+            <b>お問い合わせはこちら</b>
+        </div>
+            <div class="otoi02">
+            <div class="waku01">
+            <b><i class="fas fa-phone"></i>　受付時間 : 8:00～20:00</b><br>
+            <b><a href="tel:00012345678">000-1234-5678</a></b>
+            </div>
+        </div>
+            <div class="otoi03">
+            <b>※ご不明点がございましたらお電話ください</b><br>
+            <b>※受付時間内でも海に出ている際は電話に出られない時があります。</b>
+        </div>
+        </div>
+    </div>
+        
+    <div class="sitabu">
+        <div class="sa-bi01">
+            <b>お得情報!!</b>
+        </div>
+        <div class="sa-bi02">
+            <b>地図</b>
+        </div>
+        <div class="sa-bi03">
+            <b>サービス</b>
+        </div>
+        <div class="sa-bi04">
+            <b>天気</b>
+        </div>
+    </div>    
+      
+</div><!--インフォメーショントップ-->
+    
+
+<div class="mamewaza_weather"><div><div class="mamewaza_weather_exp"><span class="mamewaza_assembled">assembled by <a href="http://mamewaza.com/tools/" target="_blank" rel="nofollow">まめわざ</a></span></div></div></div><script type="text/javascript" src="https://mamewaza.net/weather.js?151209"></script><script type="text/javascript">mamewaza_weather({layout:"vertical",when:"7days",explanation:false,region:"473000",style:"div.mamewaza_weather > div{background-color:#e2f8fd;background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221920%22%20height%3D%221080%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200l1920%20135v945L0%20945V0z%22%20fill%3D%22rgba%28184%2C235%2C246%2C1%29%22%2F%3E%3C%2Fsvg%3E);background-position:center center;background-repeat:no-repeat;background-size:100% 100%;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:1px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"})</script>
+    
 
     <footer>
         <div class="container">
