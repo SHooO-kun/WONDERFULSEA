@@ -226,14 +226,13 @@ color: #fff;
 }
 
 .conB a{
-    width:  9.4vw;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 22%;
+    margin-left: 25%;
     padding: 10px 20px;
     border: solid 3px #fff;
     border-radius: 6px;
-    font-size: 0.85vw;
+    font-size: 15px;
     text-decoration: none;
     font-family: serif;
     color: #fff;
