@@ -32,6 +32,7 @@ body{
     font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
 }
 
+/*大画面ヘッダー*/
 @media(min-width:768px){
 
 /*ヘッダー*/
@@ -44,6 +45,7 @@ background-color: rgba(255,255,255,0.57);
     
 }
 
+/*小画面ヘッダー*/
 @media(max-width:767px){
     
     /*ヘッダー*/
@@ -51,7 +53,7 @@ header{
 position: absolute;
 z-index: 90;
 width: 100%;
-background-color: rgba(255,255,255,97);
+background-color: rgba(255,255,255,0.98);
 }
     
 }
@@ -664,7 +666,7 @@ p17{
 }
 
 
-/*コロナに関するお知らせ大画面*/
+/*コロナに関するお知らせ小画面*/
 @media(max-width:767px){
     
     .koroosira{
@@ -680,12 +682,11 @@ p17{
         margin-left:auto;
         margin-right: auto;
         background-color: #ffff;
-        
     }
     
     .koromoji1{
-        width: 100%;
-        font-size: 4.5vw;
+        width: 95%;
+        font-size: 6.5vw;
         font-family: serif;
         margin-left: auto;
         margin-right: auto;
@@ -693,15 +694,13 @@ p17{
     
     .koromoji2{
         padding: 2vw;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
         font-family: serif;
         font-size: 2.9vw;
     }
     
 }
-
-
 
 
 /*大きい画面のDIVINGトップページ*/
