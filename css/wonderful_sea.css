@@ -1,16 +1,59 @@
 @charset "utf-8";
 
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 98;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index:99;
+}
+#loader img{
+    border-radius: 50%;
+}
+
 body{
     margin: 0px;
     font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
 }
 
+@media(min-width:768px){
+
 /*ヘッダー*/
 header{
 position: absolute;
-z-index: 100;
+z-index: 90;
 width: 100%;
-background-color: rgba(255,255,255,0.97);
+background-color: rgba(255,255,255,0.57);
+}
+    
+}
+
+@media(max-width:767px){
+    
+    /*ヘッダー*/
+header{
+position: absolute;
+z-index: 90;
+width: 100%;
+background-color: rgba(255,255,255,97);
+}
+    
 }
 
 /*ヘッダーの固定*/
@@ -26,7 +69,7 @@ padding-left: 10px;
 padding-right: 10px;
 background-color: #000;
 font-family: 'Montserrat'sans-serif;
-font-size: 22px;
+font-size: 12px;
 text-decoration: none;
 color: #fff;
 }
@@ -39,6 +82,7 @@ color: #fff;
     font-family:fantasy;
     text-align: center;
 }
+
 
 /*上のコンテンツ*/
 .headB a{
@@ -129,18 +173,26 @@ color: #fff;
     }
 }
 
+
+
 /*　メイン文字　*/
 .conA{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     min-height: 450px;
     background-image: url(../image/umi.jpg);
     background-position: center;
     background-size: cover;
+    border-right:0px;
+        border-left:0px;
+        z-index: 2;
+        -ms-filter: blur(6px);
+        filter: blur(px);
     color: #fff;
     text-align: center;
+    
 }
 
 .conA h1{
@@ -148,6 +200,7 @@ color: #fff;
     margin-bottom: 10px;
     font-family: 'Montserrat',sans-serif;
     font-size:12vw;
+    z-index: 9;
     
 }
 
@@ -180,31 +233,17 @@ color: #fff;
 
 @media (min-width:768px){
     .conA h1 {
-        font-size: 6.5vw;    
+        font-size: 5.5vw;    
     }
     
     .conA p {
-        font-size: 24px;
+        font-size: 20px;
     }
-}
-
-.icon0{
-    display: inline-block;
-    margin-bottom: 10px;
-    font-size: 20px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #ffcc90;
-    color: #fff;
-    margin-top: 10px;
-    margin-left: 30px;
 }
 
 /*コンテンツCショップ概要*/
 .conB{
-    background-color: #ddffff;
+    background-color: #ffff;
     color:#000;
     
 }
@@ -247,6 +286,13 @@ color: #fff;
 }
 
 @media(max-width:768px){
+    .conB h2{
+        margin-top: 9px;
+        margin-bottom: 20px;
+        font-size: 23px;
+        color: aliceblue;
+    }
+    
     .conB a{
         margin-left: 20%;
     }
@@ -262,7 +308,7 @@ color: #fff;
 
 .conB .text{
     padding: 20px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     
 }
 
@@ -285,77 +331,6 @@ color: #fff;
     }
 }
 
-
-/*ダイビングショップアイコン*/
-.icon1{
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #136fff;
-    color: #fff;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-/*魚アイコン*/
-.icon2{
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background-color: aqua;
-    color:cornsilk;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-/*ホームアイコン*/
-.icon3{
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background-color:#ffcc90;
-    color: #fff;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-/*食事アイコン*/
-.icon4{
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background-color:coral;
-    color:beige;
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-/*記事アイコン*/
-.icon5 {
-    display: inline-block;
-    margin-bottom: 0px;
-    font-size: 15px;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    color:#fff;
-    text-align: center;
-    background-color:#999999;
-    margin-top: 5px;
-}
 
 /*トップに移動するボタン*/
 #page_top{
@@ -651,6 +626,83 @@ p17{
     } 
      
 }
+
+
+/*コロナに関するお知らせ大画面*/
+@media(min-width:768px){
+    .koroosira{
+        height: auto;
+        padding: 2vw;
+        background-color: #0006;
+        text-align: center;
+    }
+    
+    .koroo{
+        width: 90%;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
+        background-color: #ffff;
+        
+    }
+    
+    .koromoji1{
+        width: 43.5vw;
+        font-size: 2.5vw;
+        font-family: serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .koromoji2{
+        padding: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-family: serif;
+        font-size: 0.95vw;
+    }
+}
+
+
+/*コロナに関するお知らせ大画面*/
+@media(max-width:767px){
+    
+    .koroosira{
+         height: auto;
+        padding: 3vw;
+        background-color: #0006;
+        text-align: center;
+    }
+    
+    .koroo{
+        width: 95%;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
+        background-color: #ffff;
+        
+    }
+    
+    .koromoji1{
+        width: 100%;
+        font-size: 4.5vw;
+        font-family: serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .koromoji2{
+        padding: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-family: serif;
+        font-size: 2.9vw;
+    }
+    
+}
+
+
+
 
 /*大きい画面のDIVINGトップページ*/
 @media(min-width:768px){

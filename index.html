@@ -8,6 +8,43 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <script src="https://kit.fontawesome.com/88d8558cad.js" crossorigin="anonymous"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function() {
+  var h = $(window).height();
+  
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+  
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+  
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+  
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
     <script>
@@ -59,6 +96,14 @@
 </head>
 
 <body>
+    <div id="loader-bg">
+  <div id="loader">
+    <img src="LOADING.gif" width="120" height="120" alt="Now Loading..." />
+      <p><font size="4" face="Montserrat">WONDERFUL SEA</font><br>Now Loading...</p>
+  </div>
+</div><!--ローディング画面-->
+<div id="wrap">
+    
     <header  class="head-fixed">
         <div class="container">
             <div class="container-small">
@@ -107,6 +152,10 @@
     <div id="page_top">
         <a href="#DDaa"></a>
     </div><!--トップに戻るボタン-->
+    
+    
+    
+    
 
         <section class="conA" id="DDaa">
         <div class="container">
@@ -122,27 +171,13 @@
             <div class="photo"></div>
         <div class="text">
             
-            <div class="icon1">
-                    <i class="fas fa-store-alt"></i>
-                </div>
-            <div class="icon2">
-                    <i class="fas fa-fish"></i>
-                </div>
-            <div class="icon3">
-                    <i class="fas fa-home"></i>
-                </div>
-            <div class="icon4">
-                    <i class="fas fa-utensils"></i>
-                </div>
-            <div class="icon5">
-            <i class="fas fa-pen-nib"></i>
-            </div>
-            <h2>最高のダイビング旅行になりますように</h2>
-            <p>当ダイビングショップでは一日少人数ではありますが、お客様の大切な思い出となるダイビングを実現し、お泊りの際はホテルでゆったりとした時間を過ごしていただけるよう心掛けております。</p>
+            
+            <h2>～最高のダイビング旅行になりますように～</h2>
+            <p>当ダイビングショップでは一日少人数でお客様1人1人とコミュニケーションをとり、お客様の大切な思い出となるダイビングを実現します。お泊りの際もホテルでゆったりとした時間を過ごしていただけるよう、マッサージのサービスや食事まで徹底して心掛けております。</p>
             <a href="#">プランに関してはこちら</a>
         </div>
         </div>
-    </section>
+    </section><!--最高のダイビングになりますように-->
     
     <div class="henkoumae">
 <!-- 
@@ -249,6 +284,20 @@
 -->
     </div><!--変更前のトップ紹介-->
 
+    <div class="koroosira">
+        <div class="koroo">
+            <div class="koromoji1"><b>新型コロナウイルスに関するお知らせ</b></div>
+            <div class="koromoji2">
+                新型コロナウイルス感染拡大防止のため、何らかの症状がある場合や、感染者に接触した可能性がある場合はダイビングをお断りする可能性がございます。<br>当店では密になることを避けるため、<b>１日１組様</b>のご案内とさせていただきます。事前に予約いただいた方の変更でお客様の予定が重なった場合、２組様であれば(上限4名様)同時にご案内させていただくこともございますので、ご理解のほどよろしくお願い致します。ご予約の際や施設利用に関して、追記がございますので事前にご確認ください。<br><br>
+                1.ご予約していただく際、事前にご予約いただいた方の平熱体温をご報告お願致します。<br>お越しいただく前日にも体温の報告を行ってもらい、<b>平熱より2.5度以上</b>、上がっていた場合は当店のスタッフが判断致します。<br><br>
+            2.ショップ内での施設利用では衛生面に気を使い消毒を行っていただくことをお願いしております。
+            <br><br>
+                ご迷惑をおかけいたしますが、ご理解のほどよろしくお願い致します。
+            </div>
+        </div>
+    
+    </div><!--コロナのお知らせ-->
+    
     <div class="tokutyou">
         <div class="shoukai001">
             <b>～WONDERFUL SEA の <font color="#ff6633">4</font> つのこだわり～</b>
@@ -315,6 +364,19 @@
         
         
     </div><!--WONDERFULSEAの特徴欄-->
+    
+<!--
+<div class="DIVING00">     
+<div class="css-cube">
+<div class="css-face css-forward"><img src="image/awa.jpg" width="100" height="100"></div>
+<div class="css-face css-reverse"><img src="image/awa.jpg" width="100" height="100"></div>
+<div class="css-face css-right"><img src="image/awa.jpg" width="100" height="100"></div>
+<div class="css-face css-left"><img src="image/awa.jpg" width="100" height="100"></div>
+<div class="css-face css-top"><img src="image/awa.jpg" width="100" height="100"></div>
+<div class="css-face css-bottom"><img src="image/awa.jpg" width="100" height="100"></div>
+</div>  
+    </div>
+-->
     
     <div class="DIVING">
         <div class="DI001">
@@ -525,6 +587,6 @@
                 Ⓒ WONDERFUL SEA.All rights reserved.
         </div>
     </footer>    
-    
+</div>
 </body>
 </html>    
